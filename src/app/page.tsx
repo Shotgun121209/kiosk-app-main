@@ -44,7 +44,7 @@ export default function Home() {
         <SearchBar onSearch={setSearchQuery}/>
         <CategorySelctor categories={categories} selectedCategory={selectedCategory} onSelectCategory={setSelectedCategory} />
         {/* {Grid} */}
-        <div className="gird grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 pb-32">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 pb-32">
           {displayedItems.map((item, i) => (
             <ItemCard key={i} item={item} onAddToCart = {() => setSelectedItem (item)}/>
           ))}
